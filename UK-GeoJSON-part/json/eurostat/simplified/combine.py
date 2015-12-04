@@ -21,14 +21,16 @@ def combine():
             del x['properties']['NUTS112NM']
         if 'NUTS2_NAME' in x['properties']:
             del x['properties']['NUTS2_NAME']
+        print x['properties']['name']
 
     json.dump(all, file('combined.geojson', 'w'))
 
 
-def create_ni_geojson():
+
+def create_geojson_from_waypoints(locale):
 
 
-    waypoints = file('northern_ireland_waypoints.txt').read().split('\n')
+    waypoints = file(locale + '_waypoints.txt').read().split('\n')
 
     polys = []
     poly = []
@@ -49,9 +51,10 @@ def create_ni_geojson():
     geo = {"crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
      "type": "FeatureCollection", "features": [feature]}
 
-    json.dump(geo, file('northern_ireland.geojson', 'w'))
+    json.dump(geo, file(locale + '.geojson', 'w'))
 
 
 if __name__ == '__main__':
-    create_ni_geojson()
+    create_geojson_from_waypoints('northern_ireland')
+    #create_geojson_from_waypoints('scotland')
     combine()
