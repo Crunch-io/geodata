@@ -1,5 +1,6 @@
 {
   "type": "FeatureCollection",
+  "geom:center": [48.85627964041246, -104.5744875357518],
   "features": [
     {
       "type": "Feature",
