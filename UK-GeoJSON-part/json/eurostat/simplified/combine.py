@@ -49,7 +49,9 @@ def create_geojson_from_waypoints(locale):
     feature = {"type": "Feature", "properties": {"name": "Northern Ireland"}, "geometry": {"type": "MultiPolygon", "coordinates": [polys]}}
 
     geo = {"crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
-     "type": "FeatureCollection", "features": [feature]}
+           "geom:center": [54.423802512473095, -3.4735964762253224],
+           "type": "FeatureCollection", "features": [feature],
+           }
 
     json.dump(geo, file(locale + '.geojson', 'w'))
 
