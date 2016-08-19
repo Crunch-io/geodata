@@ -4,4 +4,4 @@
 # $ npm install -g topojson
 ########################################################################################
 
-topojson -o ne_50m_admin_0_countries.topojson -p name -p abbrev -p continent -p postal ne_50m_admin_0_countries.shp
+topojson -o ne_50m_admin_0_countries.topojson -p name -p abbrev -p continent -p postal --no-stitch-poles ne_50m_admin_0_countries.shp
