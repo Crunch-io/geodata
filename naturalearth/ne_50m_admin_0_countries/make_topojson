@@ -1,0 +1,7 @@
+########################################################################################
+# This script allows you to compile the latest 50m to topojson with relevent metadata.
+# It requires topojson executable, which can be installed by:
+# $ npm install -g topojson
+########################################################################################
+
+topojson -o ne_50m_admin_0_countries.topojson -p name -p abbrev -p continent -p postal ne_50m_admin_0_countries.shp
