@@ -1,0 +1,6 @@
+# Australian State Boundaries Codes
+Converted from ESRI shape files available from the [Australian Bureau of Statistics](http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.003July%202016?OpenDocument).
+
+States merged and simplified for transmission by mapshaper.
+
+licensed under a Creative Commons Attribution 2.5 (CC BY 2.5 AU)
