@@ -1,0 +1,7 @@
+# US Census Bureau
+Converted from ESRI shape files available from the [United States Census Bureau](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html).
+
+Simplified for transmission by mapshaper.
+
+General no copyright; use restrictions:
+These products are free to use in a product or publication, however acknowledgement must be given to the U.S. Census Bureau as the source. The boundary information is for visual display at appropriate small scales only. Cartographic boundary files should not be used for geographic analysis including area or perimeter calculation. Files should not be used for geocoding addresses. Files should not be used for determining precise geographic area relationships.
